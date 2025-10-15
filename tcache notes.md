@@ -26,6 +26,8 @@ When a tcache chunk is issued back, key is explicitly zeroed out from allocated 
 
  - `realloc(<freed ptr>, some_size)` can behave weirdly, and not remove the tcache entry if present. From my tests, it appears it believes chunk is valid. So if new size is same as current chunk size or next chunk is non alloted, it never queries the tcache.
 
+ - When a chunk address is recovered from tcache, its metadata bytes are not updated/checked. So if you manage to put a fake address in tcache bin, and you have a writable region, you can write fake chunks there, force malloc to use tcache bin address, but when free is called, your fake metadata will still be there. Can be used to fake chunk size or prev pointer.
+
 ### Version Differences
  - Present in glibc >= 2.27
  - Double Free key check introduced in glibc >= 2.29
