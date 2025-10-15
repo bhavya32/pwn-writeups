@@ -13,4 +13,5 @@
 | 2.    | [3x17](pwnable.tw/3x17.md) | x64 ROP, destuctor hijack with fini_array |
 | 3.    | [silver_bullet](pwnable.tw/silver_bullet.md) | x32 ROP, Off By One, BOF |
 | 4.    | [seethefile](pwnable.tw/seethefile.md) | x32 FSOP, fclose() hijack |
-
+| 5.    | [hacknote](pwnable.tw/hacknote.md) | Heap- Use After Free, GOT overwrite |
+| 6.    | [re-alloc](pwnable.tw/re-alloc.md) | Heap - Double Free, tcache corruption|
