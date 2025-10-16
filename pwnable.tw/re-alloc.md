@@ -1,4 +1,4 @@
-# pwnable.tw - hacknote
+# pwnable.tw - re-alloc
 
 Original challenge link: https://pwnable.tw/challenge/#40
 

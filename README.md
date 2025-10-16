@@ -15,3 +15,5 @@
 | 4.    | [seethefile](pwnable.tw/seethefile.md) | x32 FSOP, fclose() hijack |
 | 5.    | [hacknote](pwnable.tw/hacknote.md) | Heap- Use After Free, GOT overwrite |
 | 6.    | [re-alloc](pwnable.tw/re-alloc.md) | Heap - Double Free, tcache corruption|
+| 7.    | [tcache-tear](pwnable.tw/tcache-tear.md) | Heap - Double Free, Fake unsorted bin Chunk|
+| 8.    | [sprited-away](pwnable.tw/spirited-away.md) | Heap - Fake fastbin chunk passed to free() |
